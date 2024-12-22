@@ -197,7 +197,6 @@ class CheckoutController extends Controller
             $response = Http::withHeaders($headers)
                 ->withoutVerifying() // Disables SSL verification
                 ->post($url, $data);
-                dd($response);
     
             // Check if the response is successful
             if ($response->successful()) {
