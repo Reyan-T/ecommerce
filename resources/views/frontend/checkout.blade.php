@@ -109,7 +109,7 @@
                         <button type="submit" class="btn btn-success float-end w-100">Place Order for Cash on Delivery</button><br><br/>
                     </form>
                   
-                 <form acton="{{ url('/initiate-payment')}}" method="POST">
+                 <form action="{{ url('/initiate-payment')}}" method="POST">
                     @csrf
                     <button type="submit" class="btn btn-danger pay_btn w-100">Online Pay</button><br><br/>
                  </form>                    
